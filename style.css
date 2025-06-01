@@ -35,12 +35,12 @@ nav a:hover {
     background-color: rgb(197, 195, 195);
 }
 
-/* */
+/* Sobre página */
 
-body{
-
+body.sobrePagina {
     background-image: url("bg.webp");
-    background-size: 100%;
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 article{
@@ -61,11 +61,11 @@ article{
     width: 30%;
 }
 
-.texto{
+.textoSobre{
     text-align: center;
 }
 
-.titulo{
+.tituloSobre{
     font-family: "OptimusSemiBold";
     text-align: center;
     color:#bd6707;
@@ -81,6 +81,46 @@ article{
     width: 195px;
     height: 200px;
     border-radius: 10px;
+}
+
+/* Sobre jogo */
+
+body.sobreJogo {
+    background-image: url("bgJogo.png");
+    background-size: cover;
+    background-repeat: repeat;
+}
+
+.scrollBanner {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.scrollBanner img {
+  width: 1000px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+}
+
+.scrollTexto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'OptimusSemiBold';
+  font-size: 50px;
+  text-shadow: 2px 2px #f9c043;
+}
+
+/* Armas */
+
+body.armas {
+    background-image: url(bgArmas.png);
+    background-size: cover;
+    background-repeat: repeat;
 }
 
 section{
