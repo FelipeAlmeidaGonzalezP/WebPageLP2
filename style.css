@@ -167,12 +167,14 @@ body.armasDescricao {
     margin: auto;
     width: 1000px;
     height: 250px;
+    position: relative; 
     border: 4px #ffffff6d;
     margin-bottom: 10px;
     border-top-style: double;
     border-right-style: solid;
     border-bottom-style: double;
     border-left-style: solid;
+    padding-right: 260px
 }
 
 .fundoArmasNome {
@@ -187,19 +189,44 @@ body.armasDescricao {
     text-align: left;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
+    padding-left: 20px;
 }
 
 .fundoArmasImagem {
+    position: absolute;
+    top: 10px;
+    right: 10px;
     width: 240px;
     height: 240px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    margin-left: auto;
-    margin-top: -60px;
 }
 
-/* */
+/* Página da gameplay e história */
+
+body.gameplay {
+    background-image: url(bgScrollOne.png);
+    background-size: cover;
+
+}
+
+body.historia {
+    background-image: url(bgScrollTwo.png);
+    background-size: cover;
+}
+
+.fundoJogo {
+    background-image: url(bgScrollText.png);
+    height: 1250px;
+    width: 1000px;
+    margin: auto;
+}
+
+.fundoJogoTexto {
+    font-size: 40px;
+    padding-top: 170px;
+    padding-left: 80px;
+    padding-right: 80px;
+    text-shadow: 1px 1px #27170d88;
+}
 
 section{
     padding: 100px;
