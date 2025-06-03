@@ -93,7 +93,6 @@ body.sobreJogo {
 .scrollBanner img {
   width: 1000px;
   height: 200px;
-  opacity: 0.9;
   display: block;
   margin: 0 auto;
 }
@@ -106,6 +105,10 @@ body.sobreJogo {
   font-family: 'OptimusSemiBold';
   font-size: 50px;
   text-shadow: 2px 2px #f9c043;
+}
+
+.scrollBanner:hover {
+    opacity: 0.9;
 }
 
 /* Página das armas */
@@ -124,7 +127,7 @@ body.armas {
     width: 1000px;
     height: 200px;
     opacity: 0.7;
-    border: 5px rgba(255,180,55, 0.5);
+    border: 5px #ffb43780;
     border-style: double;
 }
 
@@ -136,7 +139,18 @@ body.armas {
     font-family: 'Mantinia';
     font-size: 50px;
     color: #bd6707;
-    text-shadow: 2px 2px #f9c043;
+
+}
+
+.weaponSelect:hover {
+    background-color: #000000d4;
+    border: 5px #ffb63765;
+    border-style: double;
+}
+
+.weaponSelectTexto:hover {
+    color: #d57e1a;
+    text-shadow: 1.5px 1.5px #f9c043;
 }
 
 /* Conteúdo armas */
@@ -148,7 +162,8 @@ body.armasDescricao {
 
 .fundoArmas {
     background-color: rgba(0, 0, 0, 0.495);
-    display: block;
+    display: flex;
+    flex-direction: column;
     margin: auto;
     width: 1000px;
     height: 250px;
@@ -164,6 +179,7 @@ body.armasDescricao {
     text-align: center;
     font-family: 'Mantinia';
     font-size: 50px;
+    text-shadow: 3px 0px black;
     color: rgba(255, 255, 255, 0.9);
 }
 
@@ -176,9 +192,11 @@ body.armasDescricao {
 .fundoArmasImagem {
     width: 240px;
     height: 240px;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-left: auto;
-    margin-top: -80px;
+    margin-top: -60px;
 }
 
 /* */
