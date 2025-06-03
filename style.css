@@ -1,11 +1,3 @@
-/* Color Palette Elden ring
-#040200
-#27170d
-#653815
-#bd6707
-#f9c043
-*/
-
 nav {  
     padding: 10px;
     display: flex;
@@ -101,6 +93,7 @@ body.sobreJogo {
 .scrollBanner img {
   width: 1000px;
   height: 200px;
+  opacity: 0.9;
   display: block;
   margin: 0 auto;
 }
@@ -115,7 +108,7 @@ body.sobreJogo {
   text-shadow: 2px 2px #f9c043;
 }
 
-/* Armas */
+/* Página das armas */
 
 body.armas {
     background-image: url(bgArmas.png);
@@ -125,7 +118,8 @@ body.armas {
 
 .weaponSelect {
     background-color: black;
-    display: block;
+    display: flex;
+    flex-direction: row;
     margin: 20px;
     width: 1000px;
     height: 200px;
@@ -134,9 +128,60 @@ body.armas {
     border-style: double;
 }
 
-.weaponSelectItem {
-    
+.weaponSelectTexto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    font-family: 'Mantinia';
+    font-size: 50px;
+    color: #bd6707;
+    text-shadow: 2px 2px #f9c043;
 }
+
+/* Conteúdo armas */
+
+body.armasDescricao {
+    background-image: url(bgFire.png);
+    background-size: cover;
+}
+
+.fundoArmas {
+    background-color: rgba(0, 0, 0, 0.495);
+    display: block;
+    margin: auto;
+    width: 1000px;
+    height: 250px;
+    border: 4px #ffffff6d;
+    margin-bottom: 10px;
+    border-top-style: double;
+    border-right-style: solid;
+    border-bottom-style: double;
+    border-left-style: solid;
+}
+
+.fundoArmasNome {
+    text-align: center;
+    font-family: 'Mantinia';
+    font-size: 50px;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.fundoArmasDescricao {
+    text-align: left;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.fundoArmasImagem {
+    width: 240px;
+    height: 240px;
+    display: block;
+    margin-left: auto;
+    margin-top: -80px;
+}
+
+/* */
 
 section{
     padding: 100px;
