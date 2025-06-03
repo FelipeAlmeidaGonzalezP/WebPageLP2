@@ -18,8 +18,9 @@ nav a {
     font-weight: bold;
     background-color: gray;
     padding: 10px;
-    border-style: solid;
-    border-width: 1px;
+    margin-left: 3px;
+    border-style: double;
+    border-width: 5px;
 }
 
 nav a:hover {
@@ -189,6 +190,7 @@ body.armasDescricao {
     text-align: left;
     font-size: 20px;
     color: rgba(255, 255, 255, 0.8);
+    text-shadow: 2px 0px black;
     padding-left: 20px;
 }
 
